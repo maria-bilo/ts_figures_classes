@@ -38,14 +38,14 @@ export class Triangle implements Figure {
   }
 
   getArea(): number {
-    const s = (this.a + this.b + this.c) / 2; 
+    const s = (this.a + this.b + this.c) / 2;
     const area = Math.sqrt(s * (s - this.a) * (s - this.b) * (s - this.c));
 
-    return Math.floor(area * 100) / 100; 
+    return Math.floor(area * 100) / 100;
+  }
 }
 
 export class Circle implements Figure {
-  
   shape = 'circle';
 
   color: 'red' | 'green' | 'blue';
